@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve | Dapur Geulis</title>
+    <meta
+      name="description"
+      content="Reservasi meja di Dapur Geulis Bogor melalui WhatsApp."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="Dapur Geulis Home">
+          <img src="assets/Logo.png" alt="Logo Dapur Geulis" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a class="active" href="reserve.html">Reserve</a>
+          <a href="interior.html">Interior</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="page-title">
+        <p class="eyebrow">Reserve</p>
+        <h1>Reservasi meja</h1>
+        <p>Kirim detail reservasi langsung ke WhatsApp Dapur Geulis.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section reserve-section">
+        <div class="reserve-copy">
+          <p class="eyebrow">Reserve</p>
+          <h2>Reservasi meja untuk makan lebih tenang.</h2>
+          <p>
+            Isi detail reservasi, lalu kirim langsung melalui WhatsApp Dapur Geulis.
+            Tim restoran bisa membantu cek ketersediaan meja.
+          </p>
+        </div>
+        <form class="reserve-form">
+          <label>
+            Nama
+            <input type="text" name="nama" placeholder="Nama kamu" required />
+          </label>
+          <label>
+            Tanggal
+            <input type="date" name="tanggal" required />
+          </label>
+          <label>
+            Jam
+            <input type="time" name="jam" min="10:00" max="21:00" required />
+          </label>
+          <label>
+            Jumlah orang
+            <input type="number" name="orang" min="1" placeholder="4" required />
+          </label>
+          <label class="full">
+            Catatan
+            <textarea name="catatan" rows="4" placeholder="Contoh: meja keluarga, dekat jendela"></textarea>
+          </label>
+          <button class="primary-button full" type="submit">Kirim Reservasi via WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="assets/Logo.png" alt="Logo Dapur Geulis" />
+      <p>Dapur Geulis - Ayam & Bebek Goreng Bogor</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
